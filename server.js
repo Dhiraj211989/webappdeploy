@@ -42,9 +42,9 @@ wss.broadcast = (data) => {
   });
 };
 
-server.listen(process.env.PORT || '3000', () => {
-  console.log('Listening on %d.', server.address().port);
-});
+//server.listen(process.env.PORT || '3000', () => {
+ // console.log('Listening on %d.', server.address().port);
+//});
 
 const eventHubReader = new EventHubReader(iotHubConnectionString, eventHubConsumerGroup);
 
